@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript promises</title>
+</head>
+<body>
+    <h1>Writing Javascript promises program</h1>
+    <p id="show"></p>
+
+
+
+
+    <script>
+        function displayer(some){
+            document.getElementById("show").innerHTML = some;
+        }
+
+        function getFile(calbk){
+            let req = new XMLHttpRequest();
+            req.open('GET.html', 'C:/Users/Henry Okeke/Desktop/Javascript/countdown.html')
+            req.onload = function(){
+                if(req.status === 200){
+                    calbk(this.responseText);
+                } else {
+                    calbk("Error mess" + req.status);
+                }
+            }
+
+            req.send();
+
+        }
+
+         getFile(displayer);
+    </script>
+</body>
+</html>

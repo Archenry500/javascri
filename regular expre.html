@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <em>Using the 'i' modifier</em>
+    <p id="show"></p>
+    <hr>
+
+    <i>Using the 'g' modifier</i>
+    <p id="show2"></p>
+    <hr>
+
+    <em>Using the 'm' modifier</em>
+    <p id="show3"></p>
+
+
+    <script>
+        let p = document.getElementById("show");
+        let p2 =  document.getElementById("show2");
+        let p3 = document.getElementById("show3");
+
+        let text = "My javascript lesson on regular expressions";
+        let textRepl = text.replace(/JAVASCRIPT/i, "python");
+
+        // p.innerHTML = text.search("javascript");
+        // p.innerHTML = text.search(/Regular/i);
+        p.innerHTML = textRepl;
+
+        let text2 = "In this text is found more texts that are in  textual context";
+        // let result = text2.match(/text/g);
+        let result = text2.match(/TeXt/ig);    //to combine odifiers
+        p2.innerHTML = result.join(" ");
+
+
+        let text3 = "\nis this found \nis the file of Isil\nis is doomed";
+        let rm = text3.match(/^is/mgi);   //the syntax-sign is ^ and $
+        p3.textContent = rm;
+    </script>
+
+
+</body>
+</html>

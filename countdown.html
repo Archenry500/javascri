@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Countdown</h2>
+    <p id="count" style="text-align: center; font-size: 58px;"></p><br><br>
+    
+    <p id="timeShow" style="text-align: center; font-size: 58px;"></p>
+
+
+    <script>
+        // // let seconds = 5;
+        // let seconds = prompt("Enter your seconds to countdown");
+        // let shower = document.getElementById("count");
+
+        // function dispayCountdown() {
+        //     if (seconds > 0) {
+        //         shower.textContent = `${seconds} seconds;
+        //         remaining`;
+        //         // seconds--;
+        //         seconds-=1;
+        //         setTimeout(dispayCountdown, 1000);
+        //     } else {
+        //         shower.textContent = "TIME UP";
+        //     }
+        // }
+
+        // dispayCountdown();
+
+        function showTime(){
+            const date = new Date();
+            const time = date.toLocaleTimeString();
+            document.getElementById("timeShow").textContent = time;
+        }
+
+        const Interval = setInterval(showTime, 1000);
+    </script>
+</body>
+</html>

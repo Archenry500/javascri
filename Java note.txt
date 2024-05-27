@@ -1,0 +1,121 @@
+\b backspace
+\t horizontal tab
+\n newline
+\f form feed
+\r carriage return
+\' single quote
+\" double quote
+\u2764  heart imogie       love
+
+
+
+concantenation ; this is when we combine lines of string together.
+example......  console.log(t + msg + n);
+example......  console.log(t + "" + msg + n);          here the "" is for spacing
+example......  console.log(t + "hello my name is " + msg + n);
+example......  console.log(t + " \n" + msg + n);     here you can add newline as seen.
+
+
+rapidtables.com :- this site is for escape charaters
+
+Runner.prototype.gameOver = function () {}    :- PRESS ENTER FOR CHROME GAME IMMORTAL
+
+
+oPERATORS
+1. Arithematic operator :-  this is your mahemtical symbols + -  * /  and    ++ -- **( exponetial) %
+2. Relational  or comparative operator :- > <  >= <= == === != !==
+3. logical operator
+4. btwise
+5. string
+
+
+
+statement
+*Conditional  :- If statement
+*Loical   :     &&   (AND)   ||  (OR)   !(NOT)
+
+Tenary operator
+
+it reduces our line of code on conditional statement eg.
+var ans = prompt("Do you want to learn javascript?");
+
+if (ans == "yes") {
+    alert("you have been sent an invite")
+} else {
+    alert("sorry");
+ }
+
+
+// tenary operator reducing it to a simple one line code
+
+ans == "yes"? alert("you have been sent a ticket"): alert("No invite")
+
+Switch statement:-  It takes a particular variable and test  against some possiblities provided(condition)
+
+
+LOOPS   (SWITH CASE)
+
+LOOPS :-     * For
+             * While
+             * Do... While
+Funtions
+1  intial variable
+2  Increamentor  / decreamentor
+3  Condition
+
+ <= 10
+ initail var = 1
+ Increament var = 1 + 1     (++)
+
+
+ ctrl D    for  highligting thesame word that might be in multiple lines to edit/change.
+
+
+ //strings convert to true, except for an empty ""
+
+
+ Function  :-   parameter  and argument 
+ in function the RETURN  statement marks the end the statement or 
+
+
+
+HTML DOM
+
+THE SYNTAX :-   
+
+Here as seen below the document is our HTML as a whole, and elementby class/id/tag 
+is for method /what to do.
+
+1. document.getElementByID(10)
+2. document.getElementByTagName(tag)
+3. document.getElementByClassName(Name)
+
+Other ways of accessing dom:
+doc  querySelector (cssSelector)
+
+doc querySelectorAll (cssSelector)
+
+
+
+EVENTS:-  IS an action that is taken out on an HTML element to solicit a response (are action and reaction).
+
+
+    // Regular expressions for validation
+    const nameRegex = /^(?=\S*\s)(?!.(.).\1\1)[a-zA-Z\s]{1,12}$/; // Names with a maximum of 4 characters each and 12 characters in total
+    const emailRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/; // Email format
+    const phoneRegex = /^\d{10}$/; // Exactly 10 digits
+    const addressRegex = /^[a-zA-Z0-9\s,'-]*$/; // Alphanumeric characters, spaces, commas, dashes, and apostrophes
+    const skillsRegex = /^[a-zA-Z,\s]+$/; // Only letters, commas, and spaces
+    const salaryRegex = /^(?:(?:\d{1,5}(?:,\d{3})*)|(?:\d+))$/; // Salary range from 0 to 999,999
+    const ageRegex = /^(1[8-9]|[2-5]\d|6[0-5])$/; // Age range from 18 to 65
+
+
+
+
+
+
+
+
+
+
+

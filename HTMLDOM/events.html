@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS eVENTS</title>
+</head>
+<body>
+    <h2 onclick="this.innerHTML = 'I have been changed'" title="it is clickable" ondblclick="this.innerHTML = 'Read more...'">Read more...</h2>
+
+    <button onclick="alert('Helloooooo')">Shout</button>
+    
+    <button onclick="addEvent()">Add</button>
+    <p id="show"></p>
+    <script>
+        function addEvent(){
+            let a = Number(prompt("Enter a number of your choice"));
+            let b = Number(prompt("Enter your second number"));
+
+            let c = a + b;
+            document.getElementById("show").innerHTML = "The answer is " + c;
+            // alert("The result of the addition is " + c)
+            // alert("I have been called by a button in HTML");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence execution</title>
+</head>
+<body>
+    <h1>Callback Function</h1>
+    <p id="show"></p>
+
+    <script>
+        function myDisplayer(some){
+            document.getElementById("show").innerHTML = some;
+        }
+
+        function calc(a, b){
+            let sum = a + b;
+            myDisplayer(sum);
+        }
+
+        calc(8, 4);
+
+
+
+
+
+
+        // function disp(some){
+        //     document.getElementById("show").innerHTML = some;
+        // }
+
+        // function firstfunction(){
+        //     disp("i am called from first function");
+        // }
+
+        // function second(){
+        //     disp("in the second function");
+        // }
+
+        // // firstfunction();
+        // // second();
+        // second();
+        // firstfunction();
+
+    </script>
+</body>
+</html>

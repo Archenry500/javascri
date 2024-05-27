@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assignment</title>
+    <style>
+        button {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(18, 60, 150);
+            color: white;
+            border-color: wine;
+            border-width: 2.5px;
+            margin-left: 385px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="w">
+        <br>
+        <div id="we"></div><hr> <br>
+        <br>
+        <div id="ew"></div>
+        <br>
+        <br>
+        <br>
+        <div id="wa"></div>
+        <br>
+        <br>
+        <br>
+        <div id="wo"></div>
+        <br><br>
+    </div>
+
+    <script>
+
+        document.getElementById("w").style.backgroundColor = "skyblue";
+
+
+        const b = document.createElement("p");
+        b.innerHTML = "<i>Javascript DOM Assignment</> ";
+        // document.getElementById("we").style.backgroundColor = "darkblue";
+        document.getElementById("we").style.color = "darkblue";
+        document.getElementById("we").style.textAlign = "center";
+        document.getElementById("we").style.fontSize = "65px";
+        b.classList.add("o")
+
+
+
+        const po = document.getElementById("we");
+        po.appendChild(b);
+
+
+        const c = document.createElement("d");
+        c.innerHTML = "<i>List of Top Programming Language</> ";
+        document.getElementById("ew").style.color = "wine";
+        document.getElementById("ew").style.marginLeft = "185px";
+        document.getElementById("ew").style.fontSize = "42px";
+
+        
+
+        const p = document.getElementById("ew");
+        p.appendChild(c)
+
+
+
+        const List1 = document.createElement("li");
+        List1.textContent = "Javascript";
+        const List2 = document.createElement("li");
+        List2.textContent = "Python";
+        const List3 = document.createElement("li");
+        List3.textContent = "Html";
+        const List4 = document.createElement("li");
+        List4.textContent = "Php";
+        const List5 = document.createElement("li");
+        List5.textContent = "Java";
+        // document.getElementById("wa").style.backgroundColor = "skyblue";
+        document.getElementById("wa").style.color = "wine";
+        document.getElementById("wa").style.fontSize = "39px";
+        document.getElementById("wa").style.marginLeft = "185px";
+        const pa = document.getElementById("wa");
+        // pa.appendChild(b);
+
+        pa.appendChild(List1)
+        pa.appendChild(List2)
+        pa.appendChild(List3)
+        pa.appendChild(List4)
+        pa.appendChild(List5)
+
+
+        const btn1 = document.createElement("button");
+        btn1.innerHTML = "<b>Buy</>";
+        const btn2 = document.createElement("button");
+        btn2.innerHTML = "<b>Cancel</>";
+        btn2.style.color = "black"
+        btn2.style.backgroundColor = "red"
+
+        const pe = document.getElementById("wo");
+        
+
+
+        
+        pe.appendChild(btn1)
+        pe.appendChild(btn2)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document open</title>
+</head>
+<body>
+    <h1>Document Reading website</h1>
+    <button id="read">Click to read</button>
+
+    <script>
+        let btn = document.getElementById("read");
+        btn.addEventListener("click", function(){
+            const userConfirm = confirm("do you want to read this book")
+            if(userConfirm){
+                 let nW = window.open(HTMLDOM/files/gitcodes.pdf,"", "width=450 height=450")
+                // let nW = window.open(files\git codes.pdf,"", "width=450 height=450")
+            }else{
+                alert("thank you for visiting this book")
+                return
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Expression</title>
+</head>
+<body>
+    <h1>Metacharacter</h1>
+    <p id="show"></p>
+    
+
+
+    <script>
+        let salary = "my expectation is 324000 USD"
+        let result = salary.match(/\d/g); // here \d (digit) is the metacharacter that shows every number contect
+        let result2 = salary.match(/[2-9]/g);
+        // document.getElementById("show").textContent = result;
+
+        // if (!result) {    //here the ! invertes the result ,eg if result is positive it looks for negative and vice versa
+        //     alert("no number present")
+            
+        // }else {
+        //     document.getElementById("show").textContent = result;
+
+        // }
+        
+        if (!result2) {    //here the ! invertes the result ,eg if result is positive it looks for negative and vice versa
+            alert("no number present")
+            
+        }else {
+            document.getElementById("show").textContent = result2;
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

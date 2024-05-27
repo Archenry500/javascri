@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Input</title>
+</head>
+<body>
+    <p id="show"></p>
+    <input type="text" name="" id="take"><br>
+    <input type="text" name="" id="takeb">
+    <button onclick="showinput()">Show</button>
+    <br>
+
+
+    <div id="anchor"></div><br>
+    <button id="makeElement" onclick="makeElement()">New HTML</button>
+
+    <script>
+        function showinput(){
+            const inputvalue = document.getElementById("take").value;  //receiving input
+            const b = document.getElementById("takeb").value;
+            let c = Number(inputvalue) + Number(b);
+            document.getElementById("show").innerText = c;   //display unit
+            // document.getElementById("show").innerText = inputvalue;   //display unit
+            // const e = document.getElementById("take");
+            // const e_value = e.value;
+            // document.getElementById("show").innerText = e_value;
+        }
+
+        // function makeElement(){
+        //     const anchor = document.getElementById("anchor");
+        //     const inputA = document.createElement("input");
+        //     inputA.setAttribute("id", "valA");
+        //     const inputB =  document.createElement("input");
+        //     inputB.setAttribute("id", "valB");
+        //     anchor.appendChild(inputA);
+        //     anchor.appendChild(inputB);
+        // }
+    </script>
+</body>
+</html>

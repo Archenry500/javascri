@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+    <style>
+        .signup-btn{
+            background-color: red;
+            color: white;
+        }
+
+        li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="anchor"></div>
+
+    <script>
+         const p = document.getElementById("anchor");
+         p.innerHTML = "This was done with javascript"
+
+        const newP = document.createElement("p");
+        newP.textContent = "This paragraph was created by javascript";
+
+
+        const host = document.getElementById("anchor");
+        host.appendChild(newP);
+
+        const newList = document.createElement("li");
+        newList.textContent = "Vegetables";
+        const newList2 = document.createElement("li");
+        newList2.textContent = "Pepper";
+        newList.style.fontSize = "20px"
+
+        
+
+        const newButton = document.createElement("button");
+        newButton.innerText = "Sign Up"
+        newButton.classList.add("signup-btn")
+
+        host.appendChild(newList)
+        host.appendChild(newList2)
+        host.appendChild(newButton)
+        
+
+    </script>
+
+</body>
+</html>

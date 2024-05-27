@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <h2>Using Promises</h2>
+
+
+    <script>
+        function simAsyncOps(value, delay = 1000){     //production code
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {           //callback function
+                    if (value === "fail") {
+                        reject(new Error("Op was a failure"));
+                    } else {
+                        resolve(`operation was sucesful bacause of your value ${value}`);
+                    }
+                }, delay);
+            });
+        }
+
+        simAsyncOps('fail')                               
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.error(error.message);
+            })
+        
+    </script>
+</body>
+</html>

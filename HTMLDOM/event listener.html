@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h2>Event Listener</h2>
+    <p id="show"></p>
+    <button id="toShow">Get Date</button>
+
+    <script>
+        let h = new Array;
+        h = ["January","Febraury","March","April","May","June","July","August","September","October","November","December"];
+        const a = document.getElementById("toShow");
+        const b = document.getElementById("show")
+        a.addEventListener("click", showDate);
+        function showDate(){
+            const date = new Date();
+            // alert(date);
+            b.innerHTML = `The year is ${date.getFullYear()} and the month is ${h[date.getMonth()]}`
+            // b.innerHTML = `The year is ${date.getFullYear()} and the month is ${date.getMonth() + 1}`
+        }
+
+        
+    </script>
+</body>
+</html>

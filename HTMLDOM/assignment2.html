@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Basic Calculator</p>
+    <p id="output"><input type="text" name="" id="oo"></p>
+    
+    <input type="text" name="" id="aa">
+    <input type="text" name="" id="bb"><br><br>
+    <button onclick="inputa()">+</button>
+    <button onclick="inputb()">-</button>
+    <button onclick="inputc()">*</button>
+    <button onclick="inputd()">/</button>
+    
+
+
+
+    <script>
+        function inputa(){
+            let a = document.getElementById("aa").value;  //receiving input
+            const b = document.getElementById("bb").value;
+            let c = Number(a) + Number(b);
+            document.getElementById("oo").value = c; 
+        }
+
+        function inputb(){
+            let a = document.getElementById("aa").value;  //receiving input
+            const b = document.getElementById("bb").value;
+            let c = Number(a) - Number(b);
+            document.getElementById("oo").value = c; 
+        }
+
+        function inputc(){
+            let a = document.getElementById("aa").value;  //receiving input
+            const b = document.getElementById("bb").value;
+            let c = Number(a) * Number(b);
+            document.getElementById("oo").value = c; 
+        }
+
+        function inputd(){
+            let a = document.getElementById("aa").value;  //receiving input
+            const b = document.getElementById("bb").value;
+            let c = a / b;
+            document.getElementById("oo").value = c; 
+        }
+
+    </script>
+</body>
+</html>
